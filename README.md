@@ -4,7 +4,6 @@ A beautiful and functional mobile app built with **React Native**, **Expo**, and
 
 Tailwind-styled using **NativeWind** for a clean and modern UI.
 
----
 
 ## 🚀 Features
 
@@ -15,7 +14,6 @@ Tailwind-styled using **NativeWind** for a clean and modern UI.
 - 🌐 Movie details page with overview, rating, and more
 - 🖌️ Beautiful UI styled with **TailwindCSS via NativeWind**
 
----
 
 ## 📱 Screenshots
 <p align="center">
@@ -33,7 +31,6 @@ Tailwind-styled using **NativeWind** for a clean and modern UI.
 - [Appwrite](https://appwrite.io/)
 - [NativeWind (TailwindCSS for React Native)](https://www.nativewind.dev/)
 
----
 
 ## 📂 Folder Structure
 
@@ -50,7 +47,6 @@ react-native-movies/
 ├── App.tsx
 ```
 
----
 
 ## 🛠️ Setup & Installation
 
@@ -77,13 +73,11 @@ react-native-movies/
 
    Create a `.env` file and add your TMDB and Appwrite credentials.
 
----
 
 ## 📄 License
 
 This project is open source and available under the [MIT License](LICENSE).
 
----
 
 ## 💬 Contact
 
