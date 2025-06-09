@@ -1,5 +1,6 @@
 import { icons } from "@/constants/icons";
 import { fetchMovieDetails } from "@/services/api";
+import { saveMovie } from "@/services/appwrite";
 import useFetch from "@/services/useFetch";
 import { router, useLocalSearchParams } from "expo-router";
 import { Image, ScrollView, Text, TouchableOpacity, View } from "react-native";
@@ -25,7 +26,10 @@ export default function MovieDetail(){
         </View>
       )
     }
-
+    const onSaveMovie = async () => {
+        await saveMovie(movie)
+        router.push("/(tabs)/saved")
+    }
      return (
         <View className="bg-primary flex-1">
           <ScrollView contentContainerStyle={{
@@ -56,10 +60,18 @@ export default function MovieDetail(){
               <MovieInfo label="Production Companies" value={movie?.production_companies.map((c) => c.name).join(" - ") || "N/A"}/>
           </View>
           </ScrollView>
-          <TouchableOpacity className="absolute bottom-20 left-0 right-0 mx-5 bg-accent rounded-lg py-3.5 flex flex-row items-center justify-center z-50" onPress={router.back}>
+          <View className="absolute bottom-20 left-0 right-0 mx-5 flex flex-row items-center justify-around z-50">
+
+          <TouchableOpacity className="w-3/5 bg-accent rounded-lg py-3 flex flex-row items-center justify-center" onPress={router.back}>
             <Image source={icons.arrow} className="size-5 mr-1 mt-0.5 rotate-180" tintColor="#fff"/>
             <Text className="text-white font-semibold text-base">Go back</Text>
           </TouchableOpacity>
+
+          <TouchableOpacity className="w-1/5 bg-accent rounded-lg py-3 flex flex-row items-center justify-center" onPress={onSaveMovie}>
+            <Image source={icons.save} className="size-5 mr-1 mt-0.5 rotate-180" tintColor="#fff"/>
+          </TouchableOpacity>
+          </View>
+          
         </View>
       );
 }

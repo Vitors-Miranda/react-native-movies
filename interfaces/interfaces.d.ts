@@ -22,7 +22,11 @@ interface TrendingMovie {
   count: number;
   poster_url: string;
 }
-
+interface SavedMovie {
+  movie_id: number;
+  title: string;
+  poster_url: string;
+}
 interface MovieDetails {
   adult: boolean;
   backdrop_path: string | null;
