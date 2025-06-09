@@ -1,50 +1,87 @@
-# Welcome to your Expo app 👋
+# 🎬 REACT-NATIVE-MOVIES
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+A beautiful and functional mobile app built with **React Native**, **Expo**, and **TypeScript**. It fetches movies from **TMDB (The Movie Database)** API and allows users to explore trending movies, search for titles, and save their favorites using **Appwrite** as the backend.
 
-## Get started
+Tailwind-styled using **NativeWind** for a clean and modern UI.
 
-1. Install dependencies
+
+## 🚀 Features
+
+- 🔥 **Trending Movies** on the home screen
+- 🔍 **Search** for movies with real-time results
+- ❤️ **Save your favorite movies** to a dedicated screen
+- 🧠 Search history is stored with **Appwrite**
+- 🌐 Movie details page with overview, rating, and more
+- 🖌️ Beautiful UI styled with **TailwindCSS via NativeWind**
+
+
+## 📱 Screenshots
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/474d7f14-2fd6-4c61-bef6-8ffeb17837f3" width="45%" />
+  <img src="https://github.com/user-attachments/assets/aa22889a-1bbe-420e-96c4-5b5c369e0cb6" width="45%" />
+</p>
+
+
+## 🧰 Built With
+
+- [React Native](https://reactnative.dev/)
+- [Expo](https://expo.dev/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [TMDB API](https://www.themoviedb.org/documentation/api)
+- [Appwrite](https://appwrite.io/)
+- [NativeWind (TailwindCSS for React Native)](https://www.nativewind.dev/)
+
+
+## 📂 Folder Structure
+
+```
+react-native-movies/
+├── app/
+├── assets/
+├── components/
+├── constants/
+├── interfacces/
+├── services/
+├── appwrite/
+├── types/
+├── App.tsx
+```
+
+
+## 🛠️ Setup & Installation
+
+1. **Clone the repo**
+
+   ```bash
+   git clone https://github.com/Vitors-Miranda/react-native-movies.git
+   cd react-native-movies
+   ```
+
+2. **Install dependencies**
 
    ```bash
    npm install
    ```
 
-2. Start the app
+3. **Start the app**
 
    ```bash
    npx expo start
    ```
 
-In the output, you'll find options to open the app in a
+4. **Set up environment variables**
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+   Create a `.env` file and add your TMDB and Appwrite credentials.
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
 
-## Get a fresh project
+## 📄 License
 
-When you're ready, run:
+This project is open source and available under the [MIT License](LICENSE).
 
-```bash
-npm run reset-project
-```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+## 💬 Contact
 
-## Learn more
+If you have any questions or suggestions, feel free to reach out:
 
-To learn more about developing your project with Expo, look at the following resources:
-
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+- GitHub: [Vitors-Miranda](https://github.com/vitors-miranda)
+- Email: vitorsmiranda31@gmail.com
